@@ -10,7 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./Home.css";
 
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = process.env.REACT_APP_BACKEND_API_URL;
 
 const Home = () => {
   const [users, setUsers] = useState([]);
