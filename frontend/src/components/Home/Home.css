@@ -1,0 +1,201 @@
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px; /* Reduced padding */
+  gap: 20px; /* Reduced gap */
+}
+
+.form-section {
+  flex: 1;
+  min-width: 280px; /* Reduced min-width */
+}
+
+.user-list-section {
+  flex: 2;
+  min-width: 280px; /* Reduced min-width */
+}
+
+.form-container,
+.user-card {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px; /* Reduced border-radius */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.form-container {
+  padding: 30px; /* Reduced padding */
+}
+
+.form-container h2 {
+  margin-top: 0;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px; /* Reduced margin */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px; /* Reduced margin */
+}
+
+.form-container input {
+  width: 100%;
+  padding: 12px; /* Reduced padding */
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px; /* Reduced border-radius */
+  font-size: 15px; /* Reduced font-size */
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.form-container input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-container input:focus {
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 13px; /* Reduced font-size */
+  margin-top: 5px; /* Reduced margin */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: flex-end; /* Align buttons to the right */
+}
+
+.form-container button {
+  width: auto; /* Allow button to size according to content */
+  padding: 10px 15px; /* Compact padding */
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px; /* Compact font size */
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.form-container button:hover {
+  transform: translateY(-2px); /* Reduced transform */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.form-container button[type="submit"] {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+.form-container button[type="button"] {
+  background: linear-gradient(to right, #636363, #a2ab58);
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px; /* Reduced gap */
+}
+
+.user-card {
+  padding: 15px; /* Reduced padding */
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Reduced gap */
+  transition: all 0.3s;
+}
+
+.user-card:hover {
+  transform: scale(1.02); /* Reduced transform */
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
+}
+
+.avatar {
+  font-size: 3em; /* Reduced font-size */
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.user-info h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.1em; /* Reduced font-size */
+  font-weight: 600;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.user-info p {
+  margin: 3px 0 0; /* Reduced margin */
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9em; /* Reduced font-size */
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px; /* Reduced gap */
+}
+
+.card-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em; /* Reduced font-size */
+  padding: 5px; /* Reduced padding */
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s;
+}
+
+.card-actions button:hover {
+  color: #fff;
+  transform: scale(1.2); /* Reduced transform */
+}
+
+@media (max-width: 992px) {
+  .home-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 10px; /* Further reduced padding */
+    gap: 10px; /* Further reduced gap */
+  }
+
+  .form-section,
+  .user-list-section {
+    min-width: unset;
+  }
+
+  .form-container {
+    padding: 15px; /* Further reduced padding */
+  }
+
+  .user-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .card-actions {
+    justify-content: center;
+  }
+}

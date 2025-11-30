@@ -1,0 +1,38 @@
+.app-header {
+  padding: 20px; /* Reduced padding */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Reduced gap */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2em; /* Reduced font size */
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.header-icon {
+  font-size: 2em; /* Reduced font size */
+  color: #fff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: 15px; /* Further reduced padding for mobile */
+    gap: 10px; /* Further reduced gap for mobile */
+  }
+
+  .app-header h1 {
+    font-size: 1.5em; /* Further reduced font size for mobile */
+  }
+
+  .header-icon {
+    font-size: 1.5em; /* Further reduced font size for mobile */
+  }
+}
